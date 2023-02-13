@@ -40,7 +40,7 @@ class carbon_c_relay::params {
   $sorted_matches              = true
   $sorted_rewrites             = false
   $statistics_hostname         = undef
-  $statistics_sending_interval = 60
+  $statistics_sending_interval = undef
   $sysconfig_file              = '/etc/sysconfig/carbon-c-relay'
   $sysconfig_template          = "carbon_c_relay${sysconfig_file}.erb"
   $user                        = 'carbon-c-relay'
