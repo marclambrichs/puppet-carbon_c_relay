@@ -10,7 +10,7 @@ class carbon_c_relay::params {
   $init_file                   = '/etc/init.d/carbon-c-relay'
   $init_file_ensure            = 'file'
   $init_template               = "carbon_c_relay${init_file}.erb"
-  $interface                   = '0.0.0.0'
+  $interface                   = undef
   $io_timeout                  = 600
   $limit_fsize                 = undef
   $limit_cpu                   = undef
@@ -40,7 +40,7 @@ class carbon_c_relay::params {
   $sorted_matches              = true
   $sorted_rewrites             = false
   $statistics_hostname         = undef
-  $statistics_sending_interval = 60
+  $statistics_sending_interval = undef
   $sysconfig_file              = '/etc/sysconfig/carbon-c-relay'
   $sysconfig_template          = "carbon_c_relay${sysconfig_file}.erb"
   $user                        = 'carbon-c-relay'
