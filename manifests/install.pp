@@ -8,7 +8,7 @@ class carbon_c_relay::install (
 ) {
 
   if $package_manage {
-    require epel
+    include epel
   
     group { $group:
       ensure => present
