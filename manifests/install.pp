@@ -20,7 +20,8 @@ class carbon_c_relay::install (
     }
 
     package { $package_name:
-      ensure => $package_ensure
+      ensure  => $package_ensure,
+      require => Yumrepo['epel'],
     }
   }
 }
